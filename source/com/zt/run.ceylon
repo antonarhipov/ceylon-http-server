@@ -12,8 +12,7 @@ void run(){
        print("New client connection accepted!");
        HTTPServer httpServer = HTTPServer(socket);
        
-       //WTF
        Thread threadRunner = Thread(httpServer);
-	   threadRunner.start(); 
+       threadRunner.start(); 
    }
 }
